@@ -1,0 +1,10 @@
+FROM ubuntu:latest
+RUN apt-get update &&\
+    apt-get install -y curl
+RUN curl -sL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh
+RUN bash nodesource_setup.sh
+RUN apt install nodejs -y
+COPY nodejs-app-nc1 /nodejs-app-nc1
+WORKDIR /nodejs-app-nc1
+RUN npm install
+CMD ["npm", "start"]

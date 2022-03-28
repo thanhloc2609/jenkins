@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+  nodejsapp:
+    build:
+      context: .
+      dockerfile: Dockerfile.nodejs
+    ports:
+      - 8081:1313
+    restart: always

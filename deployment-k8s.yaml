@@ -41,3 +41,4 @@ spec:
     nodePort : 32667
   selector:
     app: loc-nodejs-deployment-k8s
+  type: NodePort

@@ -1,8 +1,7 @@
-version: '3.5'
+version: '3'
 services:
   loc-nodejs-app:
     image: thanhloc2609/k8s-nodejs:3003
     container_name: loc-nodejs-app
     ports:
       - 32323:1313
-    restart: always

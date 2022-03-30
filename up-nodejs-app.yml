@@ -1,9 +1,8 @@
 version: '3.5'
 services:
-  nodejsapp:
-    build:
-      context: .
-      dockerfile: Dockerfile.nodejs
+  loc-nodejs-app:
+    image: thanhloc2609/k8s-nodejs:3003
+    container_name: loc-nodejs-app
     ports:
-      - 8081:1313
+      - 32323:1313
     restart: always

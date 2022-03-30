@@ -1,7 +1,7 @@
 version: '3'
 services:
   loc-nodejs-app:
-    image: thanhloc2609/k8s-nodejs:3003
+    image: thanhloc2609/k8s-nodejs:2
     container_name: loc-nodejs-app
     ports:
       - 32323:1313
